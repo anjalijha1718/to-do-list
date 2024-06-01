@@ -1,0 +1,129 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#A5D8DD;
+    background-image: url('your-background-image-url.jpg'); /* Replace 'your-background-image-url.jpg' with the URL of your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+.top-bar {
+    background-color: #26019d;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Added for positioning */
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute; /* Added for positioning */
+    left: 20px; /* Adjust as needed */
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgb(5, 17, 143); /* Added a semi-transparent white background for better readability */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto; /* Center align text */
+}
+
+#todo-input {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#add-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ebe9f5;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn, .complete-btn, .incomplete-btn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background-color: #4caf50;
+}
+
+.incomplete-btn {
+    background-color: #ff9800;
+}
+
+.completed .complete-btn {
+    background-color: #ccc;
+}
+
+.daily-routine {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #3498db; /* Added a semi-transparent white background for better readability */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.daily-routine h2 {
+    text-align: center;
+}
+
+.routine-content {
+    display: flex;
+    align-items: center;
+}
+
+.routine-content img {
+    max-width: 50%; /* Adjust image width */
+    margin-right: 20px; /* Add some space between the image and the text */
+}
+
+.routine-content p {
+    text-align: center;
+    margin: 0; /* Remove default margin */
+}
